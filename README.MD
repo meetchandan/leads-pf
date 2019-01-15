@@ -16,11 +16,11 @@ This will spin up cassandra and kafka. Cassandra Keyspaces and Tables will be cr
 Load the project in IntelliJ
 
 - Run src/main/scala/kafka/Producer.scala    
-- This will put messages in Kafka Topic called "leads"
+- This will put randomly generated messages in Kafka Topic called "leads"
 
 
 - Run src/main/scala/spark/Streaming.scala
-- This will consume messages from Kafka and populate 3 cassandra tables:
+- This will consume messages from Kafka topic "leads" and populate 3 cassandra tables:
 
   lead_count -> Hourly and Daily Count of leads 
   lead_loc_count -> Hourly and Daily Count of leads per location
