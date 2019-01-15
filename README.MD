@@ -17,6 +17,7 @@ Load the project in IntelliJ
 
 - Run src/main/scala/kafka/Producer.scala    
 - This will put randomly generated messages in Kafka Topic called "leads"
+- Keep it running as long as you want the messages to be generated
 
 
 - Run src/main/scala/spark/Streaming.scala
@@ -25,6 +26,8 @@ Load the project in IntelliJ
   lead_count -> Hourly and Daily Count of leads 
   lead_loc_count -> Hourly and Daily Count of leads per location
   master -> This is the master table with all the messages written as is 
+  
+  Keep it running.
  
 - Run src/main/scala/api/Main.scala
 - This will start a http server on port 9001 with the following api's exposed:
