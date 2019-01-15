@@ -5,7 +5,6 @@ import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives._
 import akka.stream.ActorMaterializer
 import cassandra.CassandraRepo
-import kafka._
 
 
 object c extends CassandraRepo
